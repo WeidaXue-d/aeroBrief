@@ -1,0 +1,2 @@
+# Keep Day 1 minimal to ensure quick run
+# (no external libs strictly required)
