@@ -66,6 +66,10 @@ python main.py \
 - 近距离航段（周转紧凑） +0.05
 - 最终分数限定在 [0, 1]，并划分阈值：low (<=0.33), medium (<=0.66), high (>0.66)
 
+## Day 1 Run Log
+Example run saved in [runs/demo_2025-09-20.txt](runs/demo_2025-09-20.txt)
+
+
 
 ---
 
