@@ -5,34 +5,8 @@
 
 ##  Why this project / 项目意义
 - 将**飞行运行简报**（航班信息、机场天气、时间窗口）与**延误风险预测**结合，形成可落地的飞行前辅助工具。
-- 有清晰的技术栈（Python + 数据工程 + 机器学习），适合作为你的转学&实习作品集核心项目。
 
 
-##  Roadmap / 路线图
-- **Day 1**: 项目骨架 + 规则引擎 baseline（本仓库）
-- **Day 2-3**: 数据源对接（历史航班 & METAR/TAF 天气 & 机场拥堵指标），清洗与特征工程
-- **Day 4-5**: 训练第一个轻量模型（例如 XGBoost / LightGBM），对比规则baseline
-- **Day 6-7**: CLI/小型Web页面（Streamlit/FastAPI）+ 可视化报告（特征重要性、混淆矩阵等）
-- **Plus**: 航空业务 knowledge 注入（SID/STAR、枢纽时段、ATFM/slot、连接航班、机型变化）
-
-##  How to run / 运行方式
-```bash
-# 1) 创建虚拟环境
-python3 -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
-
-# 2) 安装依赖
-pip install -r requirements.txt
-
-# 3) 运行示例（可自定义参数）
-python main.py \
-  --flight_no CA123 \
-  --dep ZBAA \
-  --arr ZSPD \
-  --dep_time 2025-09-20T08:30:00 \
-  --arr_time 2025-09-20T10:45:00 \
-  --dep_metar "ZBAA 200800Z 04005MPS 9999 FEW020 22/12 Q1015" \
-  --arr_metar "ZSPD 200945Z 06010MPS 8000 RA BKN015 24/20 Q1009"
-```
 
 示例输出（示意）：
 ```
